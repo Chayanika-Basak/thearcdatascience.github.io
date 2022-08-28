@@ -1,8 +1,12 @@
 .mobnav {
   background-color: #2b2b2b;
   overflow: hidden;
-  font-size: 55px;
+  font-size: 60px;
 } 
+
+.mblink{
+  font-size: 60px;
+}
 
 .mobnav .mblink{
   float: left;
@@ -10,7 +14,6 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 55px;
 }
 
 .isactive {
@@ -23,7 +26,7 @@
 }
 
 .mobnav .mblink:hover{
-  color: white;
+  color: #f2f2f2;
 }
   
 
