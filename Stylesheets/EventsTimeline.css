@@ -1,151 +1,84 @@
-<<<<<<< HEAD
-  
-  
-    /* Timeline Container */
-    .timeline{
-      background: #1a1a1a;
-      display: inline-flex;
-      padding: 20px;
-      float: right;
-    } 
-  
-    /* Outer Layer with the timeline border */
-    .outer {
-      border-left: 2px solid #333;
-    }
-    
-    /* Card container */
-    .card {
-      position: relative;
-      margin: 50px 50px 20px 20px;
-      padding: 10px;
-      background: #1a1a1a;
-      color: white;
-      border-radius: 8px;
-      
-    }
 
-    /* Information about the timeline */
-    .info {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    /* Title of the card */
-  .title {
-    color: white;
-    position: relative;
-  }
-    
-  /* Timeline dot  */
-  .title::before {
-    content: "";
-    position: absolute;
-    background: white;
-    border-radius: 999px;
-    border: 3px solid white;
+  /* Timeline Container */
+  .timeline{
+    background: #1a1a1a;
+    display: inline-flex;
+    padding: 20px;
+    float: right;
   } 
-  @media only screen and (max-width: 900px) {
-    .timeline{
-      width: 90vw;
-    }
 
-    .info{
-      font-size: 25px;
-    }
-
-    .title {
-      font-size: 60px;
-    }
-
-     
-    .title::before {
-      width: 20px;
-      height: 20px;
-      left: -40px;
-    }     
-
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 2px solid #333;
   }
-
-  @media only screen and (min-width: 900px){
-    .timeline {
-      width: 70vw;
-    }
-
-    .title{
-      font-size: xx-large;
-    }
-
-    .title::before{
-      width: 10px;
-      height: 10px;
-      left: -39px;
-    } 
   
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 50px 50px 20px 20px;
+    padding: 10px;
+    background: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    
   }
 
-=======
-   
- /* Timeline Container */
-.timeline {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.1em;
-  /*margin: 80px 80px 80px 110px;*/
-  width: 80vw;
-  padding: 20px;
-  float: right;
-}
-
-/* Outer Layer with the timeline border */
-.outer {
-  border-left: 2px solid #333;
-}
-
-/* Card container */
-.card {
-  position: relative;
-  margin: 50px 50px 20px 20px;
-  padding: 10px;
-  background: #1e1f26;
-  color: #faebd7;
-  border-radius: 8px;
-  z-index: 2;
-}
-
-/* Information about the timeline */
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* Title of the card */
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title of the card */
 .title {
-  color: #faebd7;
+  color: white;
   position: relative;
-  font-size: xx-large;
 }
-
+  
 /* Timeline dot  */
 .title::before {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
   background: white;
   border-radius: 999px;
-  left: -39px;
   border: 3px solid white;
+} 
+@media only screen and (max-width: 900px) {
+  .timeline{
+    width: 90vw;
+  }
+
+  .info{
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+    
+  .title::before {
+    width: 20px;
+    height: 20px;
+    left: -40px;
+  }     
+
 }
 
-.background {
-  position: absolute;
-  height: 90vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: auto;
+@media only screen and (min-width: 900px){
+  .timeline {
+    width: 70vw;
+  }
+
+  .title{
+    font-size: xx-large;
+  }
+
+  .title::before{
+    width: 10px;
+    height: 10px;
+    left: -39px;
+  } 
+
 }
->>>>>>> e265542162d1c01675c84645256defec911be2cc
