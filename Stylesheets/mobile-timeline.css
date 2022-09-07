@@ -1,0 +1,33 @@
+@media only screen and (min-width: 600px) {
+.mobtimeline{
+    background: #1a1a1a;
+    display: inline-flex;
+    width: 90vw;
+    padding: 20px;
+    float: right;
+} 
+
+.mobtitle {
+    color: white;
+    position: relative;
+    font-size: 60px;
+}
+
+.mobtitle::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 999px;
+    left: -40px;
+    border: 3px solid white;
+}
+
+.mobinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+}
+}

@@ -1,53 +1,86 @@
-
   
-  /* Timeline Container */
-  .timeline {
-    background: #1a1a1a;
-    display: inline-flex;
-    /*margin: 80px 80px 80px 110px;*/
-    width: 70vw;
-    padding: 20px;
-    float: right;
-  }
   
-  /* Outer Layer with the timeline border */
-  .outer {
-    border-left: 2px solid #333;
-  }
+    /* Timeline Container */
+    .timeline{
+      background: #1a1a1a;
+      display: inline-flex;
+      padding: 20px;
+      float: right;
+    } 
   
-  /* Card container */
-  .card {
-    position: relative;
-    margin: 50px 50px 20px 20px;
-    padding: 10px;
-    background: #1a1a1a;
-    color: white;
-    border-radius: 8px;
+    /* Outer Layer with the timeline border */
+    .outer {
+      border-left: 2px solid #333;
+    }
     
-  }
-  
-  /* Information about the timeline */
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  /* Title of the card */
+    /* Card container */
+    .card {
+      position: relative;
+      margin: 50px 50px 20px 20px;
+      padding: 10px;
+      background: #1a1a1a;
+      color: white;
+      border-radius: 8px;
+      
+    }
+
+    /* Information about the timeline */
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    /* Title of the card */
   .title {
     color: white;
     position: relative;
-    font-size: xx-large;
   }
-  
+    
   /* Timeline dot  */
   .title::before {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
     background: white;
     border-radius: 999px;
-    left: -39px;
     border: 3px solid white;
+  } 
+  @media only screen and (max-width: 900px) {
+    .timeline{
+      width: 90vw;
+    }
+
+    .info{
+      font-size: 25px;
+    }
+
+    .title {
+      font-size: 60px;
+    }
+
+     
+    .title::before {
+      width: 20px;
+      height: 20px;
+      left: -40px;
+    }     
+
   }
+
+  @media only screen and (min-width: 900px){
+    .timeline {
+      width: 70vw;
+    }
+
+    .title{
+      font-size: xx-large;
+    }
+
+    .title::before{
+      width: 10px;
+      height: 10px;
+      left: -39px;
+    } 
+  
+  }
+

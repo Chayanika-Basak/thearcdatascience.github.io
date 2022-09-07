@@ -7,11 +7,12 @@
         <link href="Stylesheets/top-nav.css" rel="stylesheet" type = "text/css">
         <link href="Stylesheets/sidebar.css" rel="stylesheet" type = "text/css">
         <link href="Stylesheets/EventsTimeline.css" rel="stylesheet" type = "text/css">
-
+		<link href="Stylesheets/mobile-nav.css" rel="stylesheet" type = "text/css">
+		<script src="https://cdn.tailwindcss.com"></script>
     </head>
 
     <body style="padding: 0px; margin: 0px;">
-        <div class="topnav">
+        <div class="topnav hidden lg:flex">
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
             <a class="active">EVENTS</a>
@@ -19,12 +20,47 @@
             <a href="team.html">TEAM</a>
           </div>
 
-          <div class="sidebar">
+          <div class="sidebar hidden lg:flex">
             <a href="#home"><img src="Social Media Icons/icons8-instagram.svg" alt="Instagram"></a>
             <a href="#news"><img src="Social Media Icons/icons8-twitter.svg" alt="Twitter"></a>
             <a href="#contact"><img src="Social Media Icons/icons8-linkedin.svg" alt="LinedIn"></a>
             <a href="#about"><img src="Social Media Icons/icons8-github.svg" alt="Github"></a>
           </div>
+
+		  <!-- Start: Mobile/Tab Screen -->
+		  <div class="lg:hidden"> 
+
+            <div class="mobnav" id="mymobnav">
+                <a href="index.html" class="text-[#f2f2f2] mblink">The ARC</a>
+                <a href="index.html" class="text-[#f2f2f2] mblink">HOME</a>
+                <a class="isactive mblink">ABOUT</a>
+                <a href="events.html" class="text-[#f2f2f2] mblink">EVENTS</a>
+                <a href="projects.html" class="text-[#f2f2f2] mblink">PROJECTS</a>
+                <a href="team.html" class="text-[#f2f2f2] mblink">TEAM</a>
+                <div class="mblink">
+                    <div class="flex items-center">
+                        <a href="#home"><img src="Social Media Icons/icons8-instagram.svg" alt="Instagram" class="w-28"></a>
+                        <a href="#news"><img src="Social Media Icons/icons8-twitter.svg" alt="Twitter" class="w-28"></a>
+                        <a href="#contact"><img src="Social Media Icons/icons8-linkedin.svg" alt="LinedIn" class="w-28"></a>
+                        <a href="#about"><img src="Social Media Icons/icons8-github.svg" alt="Github" class="w-28"></a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:65px;" class="icon mblink text-[#f2f2f2]" onclick="myFunction()">&#9776;</a>
+            </div>
+
+            <script>
+                function myFunction() {
+                var x = document.getElementById("mymobnav");
+                if (x.className === "mobnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "mobnav";
+                }
+                }
+            </script>
+
+        </div>
+        <!-- End: Mobile/Tab Screen -->
         
         <div class="timeline">
 		<div class="outer">
